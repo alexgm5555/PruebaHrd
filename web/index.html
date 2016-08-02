@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<!--
+	To change this license header, choose License Headers in Project Properties.
+	To change this template file, choose Tools | Templates
+	and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Registrar usuario</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>html { font-size: 14px; font-family: Verdana, Helvetica, sans-serif; bgcolor:"#E6E6FA"}</style>
+                <script language="JavaScript" src="js/funcionesPropias.js"></script>
+		<script language="JavaScript" src="scripts/jquery-1.10.2.js"></script>
+		<script language="JavaScript" src="scripts/jquery-ui.js"></script>
+		<script language="JavaScript" src="scripts/jquery.min.js"></script>
+		<script language="JavaScript" src="scripts/kendo.all.min.js"></script>
+		<script language="JavaScript" src="scripts/kendo.messages.es-ES.min.js"></script>
+		
+                
+		<link rel="stylesheet" type="text/css" href="css/kendo.common.min.css">
+        <link rel="stylesheet" type="text/css" href="css/kendo.default.min.css">
+        <link rel="stylesheet" type="text/css" href="css/kendo.dataviz.min.css">
+		<link rel="stylesheet" type="text/css" href="css/kendo.dataviz.default.min.css">
+        <link href="http://cdn.kendostatic.com/2013.3.1119/styles/kendo.mobile.all.min.css" rel="stylesheet" type="text/css" />
+        <link rel="stylesheet" type="text/css" href="css/estilos.css">
+		<link rel="stylesheet" type="text/css" href="css/kendo.metro.min.css">
+                
+        <link rel="stylesheet" href="css/registrarUsuario.css" media="screen" title="no title" charset="utf-8">
+        <script src="js/registroUsuario.js"></script>
+	</head>
+    <body bgcolor="#FFF">
+        <div id="div2" name="div2" style="position: absolute; width:100%; min-height: 92%; height: auto; height: 100%; _height:100%;overflow-x: hidden;">
+			<div id="div1" name="div1" style="position: absolute; top: 0px; left: 0px; z-index: 1000; min-height: 100%; width: 100%; display: none; background: rgb(255, 255, 255);"></div>
+			<table align="left" cellpadding="1" cellspacing="1" style="background:#fff" id="table1" width="100%">
+				<colgroup span="1">
+					<col width="50px" span="1">
+					<col width="250px" span="1">
+					<col span="1">
+					<col width="200px" span="1">
+				</colgroup>
+				<tbody>
+					<tr>
+						<td align="left" class="espacio" valign="middle" rowspan="1" colspan="1">
+							<div align="left" id="">
+								<img border="0" id="image01_V1" width="51" height="46" src="images/Nav-64.png" tabindex="0">
+							</div>
+						</td>
+						<td align="left" class="default" valign="middle" rowspan="1" colspan="1">
+							<div align="left" id="">
+								<div id="divTituPrinc" name="divTituPrinc"><font color="#80BD2A" size="4"></font></div>
+							</div>
+						</td>
+						<td align="left" class="default" valign="middle" rowspan="1" colspan="1">
+							<div align="left" id="">
+								<div id="divCabecera" name="divCabecera" style="text-align:center;color:#FFF; font-size:12px"></div>
+							</div>
+						</td>
+						<td align="left" s valign="middle" rowspan="1" colspan="1">
+							
+                                                    <div align="left" id="">
+                                                                                <div align="right" id="">
+											<a class="k-grid" onclick="showDetailsCrearV2()" aling="center"><span class="k-icon po_mas"></span></a>
+										</div>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="div4" name="div4" style="background:#80BD2A">
+				<table align="left" cellpadding="1" cellspacing="1" class="default" id="table1" width="100%">
+					<colgroup span="1">
+						<col width="50px" span="1">
+						<col width="100px" span="1">
+						<col width="20px" span="1">
+						<col width="90%" span="1">
+						<col width="100px" span="1">
+						<col width="20px" span="1">
+					</colgroup>
+					<tbody>
+						<tr>
+							<td align="left" class="default" valign="middle" rowspan="1" colspan="1">
+								<div align="left" id="">
+									<img border="0" id="image05" width="100" height="47" src="images/configuraci%C3%B3n-05.png" tabindex="0" style="display: none;">
+								</div>
+							</td>
+							<td align="left" class="default" valign="middle" rowspan="1" colspan="1">
+								<div align="left" id="">
+									<div id="divTituSecund" name="divTituSecund"></div>
+								</div>
+							</td>
+							<td align="left" class="default" valign="top" rowspan="1" colspan="1">
+								<div align="left" id="">
+									<!--<img border="0" id="image03" width="30" height="25" src="images/espacio-95.png" tabindex="0">-->
+								</div>
+							</td>
+							<td align="left" class="default" valign="middle" rowspan="1" colspan="1">
+								<div align="left" id="">
+									<div id="div6" name="div6" style="display: none;"><label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label><button type="button" id="ButtonFiltrar" class="k-primary k-button" data-role="button" role="button" aria-disabled="false" tabindex="0">Buscar</button></div>
+								</div>
+							</td>
+							<td align="left" class="default" valign="middle" rowspan="1" colspan="1">
+								<div align="left" id="">
+									<div id="div5" name="div5">
+										<div align="right" id="">
+											<!--<a class="k-grid" onclick="showDetailsCrearV2()" aling="center"><span class="k-icon po_mas"></span></a>-->
+										</div>
+									</div>
+									<div align="right" id=""></div>
+								</div>
+							</td>
+							<td align="left" class="default" valign="top" rowspan="1" colspan="1">
+								<div align="left" id="">
+									
+								</div>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+				<br clear="all">
+			</div>
+			<table align="left" cellpadding="1" cellspacing="1"  id="table3" width="100%">
+				<colgroup span="1">
+					<col width="100%" span="1">
+				</colgroup>
+				<tbody>
+					<tr>
+						<td align="left"  valign="top" rowspan="1" colspan="1">
+							<div align="left" id="">
+                                                                <div id="outerWrapper">
+                                                                    <div id="grid"></div>
+                                                                </div>
+								<table align="left" cellpadding="1" cellspacing="1"  id="table2" width="100%">
+									<colgroup span="1">
+										<col width="100%" span="1">
+										<col span="1">
+									</colgroup>
+									<tbody>
+										<tr>
+											<td align="left"  valign="top" rowspan="1" colspan="1">
+												<div align="left" id="">
+													<div id="windowDiv" name="windowDiv"></div>
+													<script type="text/javascript" src="/sbm/resources/jmaki-min.js"></script>
+													<textarea id="textArea1" name="textArea1"></textarea>
+													<textarea id="textArea2" name="textArea2"></textarea>
+													<button type="button1">Click Me!</button>
+													<button type="button01">Click Me!</button>
+													<label >pocestado</label>
+													<input name="textField2" id="textField2" ><span >Invalid Entry</span>
+													<textarea id="textArea5" name="textArea5"></textarea>
+												</div>
+											</td>
+											<td align="center"  valign="top" rowspan="1" colspan="1">
+												<div align="left" id="">
+													<label >pilcdata</label>
+													<br clear="all">
+													<textarea id="textArea3" name="textArea3" ></textarea>
+													<label >pocestadoIN</label>
+													<input name="textField3" id="textField3"><span>Invalid Entry</span>
+												</div>
+											</td>
+										</tr>
+										<tr>
+											<td align="left"  valign="top" rowspan="1" colspan="1">
+												<div align="left" id="">
+													<textarea id="textArea4" name="textArea4" ></textarea>
+													<br clear="all">
+													<label >Wk_invisibles</label>
+													<textarea id="textArea6" name="textArea6"></textarea>
+													<br clear="all">
+													<label >Wk_restriccion</label>
+													<textarea id="textArea7" name="textArea7" ></textarea>
+													<br clear="all">
+													<label >poreturnidLOOK</label>
+													<input name="textField6" id="textField6" >
+													<br clear="all">
+													<label >pocestadoLOOK</label>
+													<input name="textField7" id="textField7" >defecto<span >Invalid Entry</span>
+													<br clear="all">
+													<label >polcdataCAPI</label>
+													<textarea id="textArea10" name="textArea10"></textarea>
+													<br clear="all">
+													<label >polcdataPROYE</label>
+													<textarea id="textArea11" name="textArea11" ></textarea>
+													<br clear="all">
+													<input  name="SB_Name" id="button02" type="submit">
+												</div>
+											</td>
+											<td align="left"  valign="top" rowspan="1" colspan="1">
+												<div align="left" id="">
+													<label >picusrcod</label>
+													<input name="textField4" id="textField4"><span >Invalid Entry</span>
+													<label >piicarcod</label>
+													<input name="textField5" id="textField5" ><span >Invalid Entry</span><span >Invalid Entry</span><span >Lower than minimum value</span><span >Exceeded than maximum value</span>
+													<label >Pictable</label>
+													<input name="textField8" id="textField8" ><span >Invalid Entry</span>
+													<label >pilsircdata</label>
+													<textarea id="textArea8" name="textArea8"></textarea>
+												</div>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</td>
+					</tr>
+				</tbody>
+			</table>
+			<div id="accessDiv" vertical-align:= "middle">
+				<div align="center">
+					<div id="labelMensaje" style="vertical-align: middle;"></div>
+				</div>
+				<div align="right">
+					<div id="labelPopUp" style="vertical-align: middle;margin-right: 80px;margin-left: 60px">
+					</div>
+				</div>
+				<div id="botones" align="right" style="vertical-align: middle; border-top: 1px solid #E0E0E0;position: static;right: 30px;overflow: hidden;">    
+					<br>
+					<input type="button" title="Enter" value="Guardar" id="ButtonFiltr" class="k-primary">
+					<input type="button" title="Enter" value="Cancelar" id="ButtonCancel">
+				</div>
+				<br>
+			</div>
+		</div>
+	</body>
+</html>
