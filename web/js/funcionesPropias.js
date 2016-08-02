@@ -11,7 +11,9 @@ function createStyleSheet(url) {
     document.head.appendChild(x);
 }
 /**
- * 
+ * funcion que se invoca en un evenchange de un campo definido por bd como cascada
+ * es una funcion recursiva ya que puede tener varios eventchange anidados 
+ * de acuerdo a los servicios del llokup que son campos por aparte monta una lista dependiendo del item seleccionado
  * @returns {undefined}
  */
 function CuJsonQuantum(){//regresa a esta funcion apenas das click en el popupActualizar
