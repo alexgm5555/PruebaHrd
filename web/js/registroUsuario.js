@@ -13,7 +13,48 @@
  * @cInvisibles                 Arreglo para almacenar todos los campos invisibles en la plantilla se llena en la funcion cargaDatosTabla
  * @cNoEditable                 Arreglo para almacenar todos los campos no Editables se llena en la funcion cargaDatosTabla
  * @plConsulta                  Bandera para determinar si es una plantilla de solo consulta o tiene todo el crud  se usa en la funcion kendoTabla
- * @llaves                      
+ * @llaves                      Todas las llaves del obj que responde el servicio sir
+ * @pillaves =                  nombre de las llaves que vienen en el servicio de lectuta
+ * @inputs = "";                en caso de tener una busqueda extendida coloca aqui los inputs
+ * @inputsType = "";            en caso de tener una busqueda extendida coloca aqui el tipo de dato de los inputs
+ * @inputsNameSer = "";         el label del los inputs
+ * @x                           arreglo con la url en la cual se esta ejecutando la aplicacion
+ * @url   
+ * @titulos = [];               en caso de que los titulos cambien 
+ * @nomApp = "Tareas";          Nombre de la aplicacion
+
+ * @instance = 0;
+ * @lookUpQuemado               para utilizarlo en kendo , especificamente si el dato esta como un campo numerico
+ * @varcotejalookup             variable para cotejar con los nombres de los campos que vienen en el lookup
+ * @jsonAppAbl                  llaves con las que viene el servicio
+ * @arrglojoinD                 arreglo para hacer match con una pagina anterior en caso de ser detalle de otra aplicacion
+ * @arrglojoinC                 arreglo en caso dde ser cabecera para hacer math y colocarlos en el header
+ * @typeItem                    Tipo de Dato al cual pertenece dicho input
+ * @arrglojLinkURL              Arreglo donde se encuentran todos los link de detalles
+ * @arrgloLinkCampo             arreglo con los campos de busqueda extendida
+ * @arrgloRelaCampo             arreglo con el campo que va a ser match en la pagina de busqueda extendida
+ * @ArregloAppAbl               bl tiene que generarme un json  parecido para hacer colocar los vvalores por defecto en el popUp de guardar y crear
+//arreglo para hacerla busqueda por defecto en el sir, en caso de que sea detalle
+//parametros usados en la funcion cargar
+ * @jsonCUPop = {};
+ * @AccPopUp = "";
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+ * @filasSum = [];
+ * @seriesg = "";
+ * @grilla                      objeto json donde estan todos los datos de la grilla
+ * @titulo 
+ * @clickGrilla                 obj donde coloco los datos de la fila seleccionada
+ * @arregloClase;
+ * @text                        objeto para cambiar un booleano en una lista 
+ * @arrLlavesServBackEndCUD     llaves que se llena en la parte de cargar y funcionan para recorrer el json que me entrega BackEnd
+ * @arrLlavesServBackEndSIR     llaves que se llena en la parte de cargar y funcionan para recorrer el json que me entrega BackEnd
+ * @strUriRest                  url rest para el servicio de consulta
+ * @strUrlRestLook              url rest para el servicio de CUD
+ * @datos = {};                 obj donde estan todos los datos de la grilla
+ * @datosLook = {};             obj donde estan todos los datos de l lookup
+arregloClase = JSON.parse(text);
+arregloClase1 = ["si", "no"];
+ * @lookup                      AREGLO EN DONDE SE ENCUENTRA TODO EL LOOKUP
  */
 var indicador = "";
 var tamPopUp = '410px'; //variable para extender el tamano del popup en caso de que el nombre sea muy grande
@@ -596,7 +637,7 @@ function displayLoading(target) {//funcion para poner bloquear una pantalla mien
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 ///////////////////////////////////////////////////////Codigo//////////////////////////////////////////////////////////////////////////////////////////////
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-/*
+/**
  * esta funcion va enlazada al index sirve para recoger los datos de paginas anteriores como usuario cargo y demas 
  * carga los datos por defecto para consultar los servicios web
  * determina si es plantilla detalle, en caso de ser asi mota en el header los valores que hiceron match para enviar la consulta con dichos valores 
